@@ -8,6 +8,10 @@
 <a href="../members">members</a>
 <a href="../about">about</a>
 <img src="{% static 'tttt.jpg' %}"/>
-
+<ul>
+    {% for x in mymembers %}
+      <li>{{ x.firstname }} {{ x.lastname }}</li>
+    {% endfor %}
+  </ul>
 </body>
 </html>
